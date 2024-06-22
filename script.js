@@ -20,4 +20,8 @@ document.getElementById('play-button').addEventListener('click', function() {
     for (let i = 0; i < numBeeps; i++) {
         setTimeout(playBeep, i * (duration + interval) * 1000);
     }
+document.getElementById('play-button').addEventListener('click', function() {
+    const audio = document.getElementById('beep-sound');
+    audio.play();
 });
+
