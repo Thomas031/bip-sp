@@ -19,12 +19,13 @@ document.getElementById('save-config').addEventListener('click', function() {
     // Sauvegarder la configuration si nécessaire
 });
 
-// Gestion du menu (optionnel, pour faire défiler vers les sections)
-document.querySelectorAll('.menu a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetSection = document.getElementById(targetId);
-        targetSection.scrollIntoView({ behavior: 'smooth' });
-    });
+// Gestion des boutons de navigation
+document.getElementById('interventions-button').addEventListener('click', function() {
+    const interventionsSection = document.getElementById('interventions-section');
+    interventionsSection.scrollIntoView({ behavior: 'smooth' });
+});
+
+document.getElementById('config-button').addEventListener('click', function() {
+    const configSection = document.getElementById('configuration-section');
+    configSection.scrollIntoView({ behavior: 'smooth' });
 });
