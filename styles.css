@@ -62,32 +62,10 @@ body {
     justify-content: center;
 }
 
-.menu {
-    margin-bottom: 20px;
-}
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.menu li {
-    background-color: #333;
-    border-radius: 5px;
-    padding: 10px 20px;
-}
-
-.menu a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.menu a:hover {
-    text-decoration: underline;
+.button.small {
+    width: 60px;
+    height: 60px;
+    font-size: 12px;
 }
 
 #interventions-section,
